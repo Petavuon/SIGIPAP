@@ -85,8 +85,9 @@ public class Producto {
         this.cantidadDisponible -= cantidad;
     }
 
+
     public void reducirStock(int cantidad, String razon) {
+        System.out.println("   >>> RAZON DE REDUCCION: " + razon);
         reducirStock(cantidad);
-        System.out.println("[INFO] Reduccion de stock - Razon: " + razon);
     }
 }
